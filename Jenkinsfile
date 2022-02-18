@@ -16,7 +16,7 @@ pipeline {
       steps{
         script{
 
-        zip zipFile: env.BUILD_ID+".zip", dir: '.'
+        zip zipFile: env.BUILD_ID+".zip", dir: '.\\text'
 	powershell "cp "+env.BUILD_ID+".zip D:/indium_zip_deploy"
         }
       }
