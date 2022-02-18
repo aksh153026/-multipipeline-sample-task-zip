@@ -17,6 +17,7 @@ pipeline {
         script{
 
         zip zipFile: 'test.zip', dir: '.'
+	powershell "cp test.zip D:\\indium_zip_deploy\\"
         }
       }
     }
