@@ -16,7 +16,7 @@ pipeline {
       steps{
         script{
 
-        zip zipFile: 'test.zip', dir: '.\\text.txt'
+        zip zipFile: 'test.zip', dir: '.'
         }
       }
     }
