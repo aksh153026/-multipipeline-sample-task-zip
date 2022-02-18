@@ -17,7 +17,7 @@ pipeline {
         script{
 
         zip zipFile: env.BUILD_ID+".zip", dir: '.'
-	powershell "cp "+env.BUILD_ID+".zip D:\\indium_zip_deploy\\"
+	powershell "Copy-Item \""+env.BUILD_ID+".zip\" -Destination \"D:\\indium_zip_deploy\\\""
         }
       }
     }
